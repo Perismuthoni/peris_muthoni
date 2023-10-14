@@ -1,17 +1,34 @@
 /* styles.css */
+:root {
+    --color: #E5DFF5;
+    --background: #363E21;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: var(--background);
+    color: var(--color);
+    font-family: orpheus-pro;
+    font-family: helvetica Neue;
+    height: 100%;
+    width: 100vw;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    text-align: center;
+    /* Center horizontally */
+
+
+
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
 
 nav ul {
     list-style: none;
@@ -28,27 +45,296 @@ nav a {
     color: #fff;
 }
 
-.container {
-    max-width: 800px;
+.navbar {
+    position: sticky;
+    top: 0px;
+    background-color: #363E21;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    min-height: 10vh;
+
+}
+
+.muthoni {
+    position: absolute;
+    left: 5px;
+    padding: 15px 20px;
+    margin: 0px 10px;
+    font-size: larger
+}
+
+.Achievments {
+    position: absolute;
+    right: 10%;
+    padding: 15px 20px;
+    margin: 0px 10px;
+    font-size: larger;
+
+
+
+}
+
+.contact {
+    position: absolute;
+    right: 1%;
+    padding: 15px 20px;
+    border-radius: 50%;
+    border: 1px solid var(--color);
+    margin: 0px 10px;
+    font-size: larger;
+    transition: top 5s ease;
+}
+
+.contact:hover {
+    background-color: var(--color);
+    color: var(--background);
+
+}
+
+.container-intro {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-weight: 100;
+    align-items: center;
+    margin: 0 auto;
+    /* padding: 20px; */
+    /* text-align: center; */
+
+}
+
+.iam {
+    /* border: 1px solid red; */
+    text-align: left;
+    width: 65%;
+    font-size: 1.5em;
+    margin: 40px 0;
+}
+
+.product {
+    /* border: 1px solid thistle; */
+    font-size: 5em;
+    font-family: cursive;
+    line-height: 1;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: -10000;
+    /* this move the text back to the proper position. May find a better way to do it later */
+    left: -200px;
+    color: var(--color); 
+}
+
+/* This is for the 2 h1 elements in the product div */
+.product>h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+    /* border: 1px solid white; */
+}
+
+/* This is to move the "engineer" text to the right */
+.product h1:last-child {
+    padding-left: 40%;
+}
+
+.container-intro .tagline {
+    margin-left: auto;
+    margin-right: 10vw;
+    height: 20vh;
+    font-size: 1.5em;
+    /* border: 1px solid blue; */
+}
+
+.container-mission {
+    display: flex;
+    height: 40vh;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
+
 }
 
-section {
-    margin-bottom: 40px;
+.column-mission {
+    flex: 1;
+    background-color: #363E21;
+    padding: 20px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
 }
 
-.project {
-    margin-bottom: 20px;
+
+.column-mission-details {
+    flex: 1;
+    padding: 20px;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    text-align: left;
+    /* Center horizontally */
+
+
 }
 
-.project img {
+.container-contact {
+    display: flex;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.column-contact {
+    flex: 1;
+    background-color: #363E21;
+    padding: 20px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+}
+
+.contact-option span {
+    display: inline-flex;
+    align-items: center;
+}
+.contact-option span:hover {
+    text-decoration: underline;
+}
+
+.contact-option a img {
+    vertical-align: middle;
+    margin-right: 5px; /* Add some spacing between the icon and text */
+}
+
+
+.column-image {
+    flex: 1;
+    padding: 2px 2px;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    text-align: center;
+    /* Center horizontally */
+    
+
+
+}
+
+
+.my_image {
+    border: 2px solid;
     max-width: 100%;
+    height: 100%;
+    /* Adjust the image height as needed */
+    object-fit: cover;
+    /* Ensure the image covers the entire container */
+    margin: 0 auto;
+    /* Center the image horizontally */
+    display: block;
+    background-color: var(--color);
+    border-radius: 15px 30px 10px 5px;
 }
+
+
+.container-articles {
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    text-align: center;
+    justify-content: space-between;
+    /* Adjust the space between columns */
+    align-items: center;
+    /* Vertically align columns */
+    column-count: 3;
+    /* Number of columns */
+    column-gap: 30px;
+    /* Set the gap between columns */
+
+}
+.newsletter{
+    text-align: left;
+    font-size: 1.5em;
+    margin: 2px 5%;
+
+}
+
+.column-finance {
+    border: 5px solid black;
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--color);
+    color: var(--color);
+    width: 70%;
+    height: 60%;
+    text-overflow: ellipsis;
+    white-space: pre;
+    overflow: hidden;
+}
+
+
+.custom-hr {
+    border: none;
+    border-radius: 50%;
+    /* Remove the default border */
+    height: 2px;
+    /* Set the desired height */
+    background-color: var(--color);
+    /* Change the color to your preferred color */
+    margin: 10px 5%;
+    /* Add margin for spacing */
+}
+
+
+.container-details {
+    display: flex;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.column-left {
+    flex: 1;
+    background-color: #363E21;
+    padding: 20px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+}
+
+.column-right {
+    flex: 1;
+    padding: 20px;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    text-align: left;
+    font-size: 2em;
+    font-family: cursive;
+
+}
+.column-right button{
+    position: absolute;
+    right: 10%;
+   background-color: var(--color);
+   color(srgb red green blue);
+}
+
+
+
 
 footer {
-    background-color: #333;
+    background-color: #363E21;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
