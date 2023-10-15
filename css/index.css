@@ -110,6 +110,7 @@ nav a {
     width: 65%;
     font-size: 1.5em;
     margin: 40px 0;
+    font-weight: 20;
 }
 
 .product {
@@ -143,6 +144,7 @@ nav a {
     margin-right: 10vw;
     height: 20vh;
     font-size: 1.5em;
+    font-weight: 20;
     /* border: 1px solid blue; */
 }
 
@@ -154,7 +156,6 @@ nav a {
     text-align: center;
 
 }
-
 .column-mission {
     flex: 1;
     background-color: #363E21;
@@ -163,22 +164,18 @@ nav a {
     justify-content: center;
     align-items: center;
     text-align: left;
+    margin-left: 40px;
 }
-
-
 .column-mission-details {
     flex: 1;
     padding: 20px;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     text-align: left;
-    /* Center horizontally */
-
+    margin-right: 40px;
+    font-size: 1.5em;
 
 }
-
 .container-contact {
     display: flex;
     height: 100vh;
@@ -187,7 +184,6 @@ nav a {
     text-align: center;
 
 }
-
 .column-contact {
     flex: 1;
     background-color: #363E21;
@@ -196,9 +192,9 @@ nav a {
     justify-content: center;
     align-items: center;
     text-align: left;
+    margin-left: 40px;
 
 }
-
 .contact-option span {
     display: inline-flex;
     align-items: center;
@@ -206,13 +202,10 @@ nav a {
 .contact-option span:hover {
     text-decoration: underline;
 }
-
 .contact-option a img {
     vertical-align: middle;
     margin-right: 5px; /* Add some spacing between the icon and text */
 }
-
-
 .column-image {
     flex: 1;
     padding: 2px 2px;
@@ -222,12 +215,10 @@ nav a {
     /* Center vertically */
     text-align: center;
     /* Center horizontally */
-    
+    margin-right: 40px;
 
 
 }
-
-
 .my_image {
     border: 2px solid;
     max-width: 100%;
@@ -241,8 +232,6 @@ nav a {
     background-color: var(--color);
     border-radius: 15px 30px 10px 5px;
 }
-
-
 .container-articles {
     display: flex;
     height: 90vh;
@@ -264,8 +253,7 @@ nav a {
     margin: 2px 5%;
 
 }
-
-.column-finance {
+.column-finance, .column-tech, .column-medium {
     border: 5px solid black;
     border-radius: 50%;
     box-shadow: 0 0 10px var(--color);
@@ -275,8 +263,23 @@ nav a {
     text-overflow: ellipsis;
     white-space: pre;
     overflow: hidden;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+.column-finance h1{
+    text-decoration: underline;
+}
+.column-finance, .column-tech, .column-medium h1{
+    text-decoration: underline;
+}
+.column-finance, .column-tech, .column-medium h1{
+    text-decoration: underline;
 }
 
+.column-finance, .column-tech, .column-medium button{
+    text-decoration: underline;
+}
 
 .custom-hr {
     border: none;
@@ -289,8 +292,6 @@ nav a {
     margin: 10px 5%;
     /* Add margin for spacing */
 }
-
-
 .container-details {
     display: flex;
     height: 80vh;
@@ -299,7 +300,6 @@ nav a {
     text-align: center;
 
 }
-
 .column-left {
     flex: 1;
     background-color: #363E21;
@@ -308,9 +308,9 @@ nav a {
     justify-content: center;
     align-items: center;
     text-align: left;
+    margin-left: 40px;
 
 }
-
 .column-right {
     flex: 1;
     padding: 20px;
@@ -321,21 +321,70 @@ nav a {
     text-align: left;
     font-size: 2em;
     font-family: cursive;
+    margin-right: 40px;
 
 }
 .column-right button{
     position: absolute;
-    right: 10%;
-   background-color: var(--color);
-   color(srgb red green blue);
+   right: 7%;
+   background-color: var(--background);
+   color: var( --color);
+   font-size: 2em;
+   border: none;
 }
-
-
-
-
 footer {
     background-color: #363E21;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
 }
+.description, .descriptiontwo ,.descriptionthree, .descriptionfour,.descriptionfive  {
+    display: none;
+    font-size: 0.5em;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* Style the button to indicate toggling */
+.expand-button button {
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .column-mission {
+      width: 100vw; /* Full width for each column on mobile devices */
+    }
+    .column-mission-details{
+        width: 100vw;
+    }
+    .column-contact{
+        width: 100vw;
+
+    }
+    .column-image{
+        width: 100vw;
+
+    }
+    .column-left{
+        width: 100vw;
+
+    }
+    .column-right{
+        width: 100vw;
+
+    }
+    .column-finance{
+        width: 100vw;
+
+    }
+    .column-tech{
+        width: 100vw;
+
+    }
+    .column-medium{
+        width: 100vw;
+
+    }
+  }
