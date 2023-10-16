@@ -1,0 +1,73 @@
+:root {
+    --color: #E5DFF5;
+    --background: #363E21;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--color);
+    font-family: orpheus-pro;
+    font-family: helvetica Neue;
+    height: 100%;
+    width: 100vw;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    text-align: center;
+    /* Center horizontally */
+
+
+
+}
+.workPage {
+    margin: 0 auto;
+  }
+  .jobSection {
+    width: 70vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    background-color: #363E21;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    min-height: 10vh;
+    box-shadow: 0 0 10px var(--color);
+
+}
+
+.muthoni {
+    position: absolute;
+    left: 5px;
+    padding: 15px 20px;
+    margin: 0px 10px;
+    font-size: larger
+}
