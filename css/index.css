@@ -318,6 +318,9 @@ padding-top: 15%;
   .workPage a{
     color: var(--color);
   }
+  .workPage-title{
+    font-size: 2em;
+  }
   .jobSection {
     width: inherit;
     display: grid;
@@ -441,6 +444,7 @@ footer {
 @media (max-width: 768px) {
     .product>h1 {
       font-size: 3em; /* Decrease font size for smaller screens */
+      padding-left: 1%;
     }
     .product h1:last-child {
         padding-left: 10%;
@@ -491,7 +495,19 @@ margin-bottom: 20px;
 }
 .jobSection{
     width:100%;
-    padding: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.column-left {
+    padding: 20px;
+    width: 100%;
+    
+
+}
+.service-description{
+font-size: 1em;
+text-align: center;
+padding-top: 15%;
 }
   }
   
