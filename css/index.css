@@ -1,13 +1,10 @@
-/* styles.css */
 :root {
     --color: #E5DFF5;
     --background: #363E21;
 }
-
 html * {
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: var(--background);
@@ -17,33 +14,27 @@ body {
     height: 100%;
     min-height: max-content;
     width: 100%;
-  max-width: 100%;
+    max-width: 100%;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     text-align: center;
-    /* Center horizontally */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-
 }
-body > *{
+
+body>* {
     overflow-x: hidden;
 }
-
 nav a {
     text-decoration: none;
     color: #fff;
 }
-
 .navbar {
     position: sticky;
     top: 0px;
     background-color: #363E21;
     color: #fff;
-    /* margin-bottom: 0.5rem 0; */
     min-height: 10vh;
     justify-content: right;
     display: flex;
@@ -51,31 +42,20 @@ nav a {
     text-align: right;
     box-shadow: 0 0 10px var(--color);
     width: 100vw;
-
 }
-
 .muthoni {
     position: absolute;
     padding: 15px 20px;
     margin: 0px 10px;
     font-size: larger;
     left: 0px;
-
 }
-
 .Achievments {
-
     padding: 15px 20px;
     margin: 0px 10px;
     font-size: larger;
-
-
-
-
 }
-
 .contact {
-    
     margin: 15px 20px;
     border-radius: 50%;
     border: 1px solid var(--color);
@@ -83,13 +63,11 @@ nav a {
     font-size: larger;
     transition: top 5s ease;
 }
-
 .contact:hover {
     background-color: var(--color);
     color: var(--background);
 
 }
-
 .container-intro {
     display: flex;
     flex-direction: column;
@@ -97,10 +75,7 @@ nav a {
     min-height: max-content;
     font-weight: 100;
     align-items: center;
-    
-
 }
-
 .iam {
     /* border: 1px solid red; */
     text-align: left;
@@ -109,40 +84,27 @@ nav a {
     margin: 40px 0;
     font-weight: 20;
 }
-
 .product {
-    /* border: 1px solid thistle; */
     font-size: 3em;
     font-family: cursive;
-
     line-height: 1;
     margin-bottom: 50px;
     position: relative;
     z-index: -10000;
-    /* this move the text back to the proper position. May find a better way to do it later */
-    /* left: -200px; */
-    color: var(--color); 
+    color: var(--color);
     text-align: left;
-   width:100vw;
-
+    width: 100vw;
 }
-
-
-
 /* This is for the 2 h1 elements in the product div */
 .product>h1 {
     margin: 0;
     padding: 0;
     font-size: 5em;
 }
-
 /* This is to move the "engineer" text to the right */
 .product h1:last-child {
     padding-left: 20%;
-    
 }
-
-
 .container-intro .tagline {
     margin-left: auto;
     margin-right: 10vw;
@@ -152,14 +114,13 @@ nav a {
     padding-top: 15px;
     /* border: 1px solid blue; */
 }
-
 .container-mission {
-  
+
     width: inherit;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     min-height: 60vh;
-    height:max-content;
+    height: max-content;
     margin: 0 auto;
     padding: 40px;
     text-align: center;
@@ -176,6 +137,7 @@ nav a {
     text-align: left;
     margin-left: 40px;
 }
+
 .column-mission-details {
     flex: 1;
     padding: 20px;
@@ -191,12 +153,12 @@ nav a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     min-height: 100vh;
-    height:max-content;
+    height: max-content;
     margin: 0 auto;
     padding: 40px;
     text-align: center;
-
 }
+
 .column-contact {
     flex: 1;
     background-color: #363E21;
@@ -206,18 +168,20 @@ nav a {
     align-items: center;
     text-align: left;
     margin-left: 40px;
-
 }
+
 .contact-option span {
     display: inline-flex;
     align-items: center;
 }
+
 .contact-option span:hover {
     text-decoration: underline;
 }
 .contact-option a img {
     vertical-align: middle;
-    margin-right: 5px; /* Add some spacing between the icon and text */
+    margin-right: 5px;
+    /* Add some spacing between the icon and text */
 }
 .column-image {
     flex: 1;
@@ -232,24 +196,19 @@ nav a {
 
 
 }
+
 .my_image {
     border: 2px solid;
     max-width: 100%;
     height: 100%;
-    /* Adjust the image height as needed */
     object-fit: cover;
-    /* Ensure the image covers the entire container */
     margin: 0 auto;
-    /* Center the image horizontally */
     display: block;
     background-color: var(--color);
     border-radius: 15px 30px 10px 5px;
 }
-
-
-
 .container-details {
-  
+
     width: inherit;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -257,7 +216,7 @@ nav a {
     padding: 40px;
     text-align: center;
     min-height: max-content;
-   
+
 
 }
 .column-left {
@@ -268,16 +227,16 @@ nav a {
     justify-content: center;
     align-items: center;
     text-align: left;
-   
+
 
 }
-.service-description{
-font-size: 1em;
-text-align: center;
-padding-top: 15%;
+.service-description {
+    font-size: 1em;
+    text-align: center;
+    padding-top: 15%;
 }
-.service-slogan{
-    font-family:fantasy;
+.service-slogan {
+    font-family: fantasy;
     font-size: 2em;
     text-align: center;
 }
@@ -293,18 +252,15 @@ padding-top: 15%;
     font-family: cursive;
 
 }
-.column-right button{
+.column-right button {
     position: absolute;
-   right: 5%;
-   background-color: var(--background);
-   color: var( --color);
-   font-size: 2em;
-   border: none;
-   /* z-index: -100; */
+    right: 5%;
+    background-color: var(--background);
+    color: var(--color);
+    font-size: 2em;
+    border: none;
+    /* z-index: -100; */
 }
-
-
-
 .workPage {
     margin: 0 auto;
     width: 100vw;
@@ -313,15 +269,14 @@ padding-top: 15%;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-  }
-  .workPage a{
+}
+.workPage a {
     color: var(--color);
-  }
-  .workPage-title{
+}
+.workPage-title {
     font-size: 2em;
-  }
-  .jobSection {
+}
+.jobSection {
     width: inherit;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -332,9 +287,8 @@ padding-top: 15%;
     padding-left: 40px;
     padding-right: 40px;
     line-height: 30px;
-  }
-
-.newsletter{
+}
+.newsletter {
     text-align: left;
     font-size: 1.5em;
     margin: 2px 5%;
@@ -342,66 +296,47 @@ padding-top: 15%;
     padding-top: 15px;
 
 }
+
 .container-articles {
-   
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     min-height: auto;
     grid-template-rows: auto;
-    gap:10px;
+    gap: 10px;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     text-align: center;
     padding: 10px 11px;
     padding-bottom: 60px;
 }
-.column-finance, .column-tech, .column-medium {
+
+.column-medium {
     border: 5px solid black;
     border-radius: 50%;
     box-shadow: 0 0 10px var(--color);
     color: var(--color);
-    text-overflow: break-word; 
+    text-overflow: break-word;
     overflow: hidden;
     min-height: 300px;
     min-width: 300px;
-    margin : 10px;
+    margin: 10px;
     padding: 20%;
-    font-family:fantasy;
-
-    
+    font-family: fantasy;
 }
 
-.column-finance, .column-tech, .column-medium h1{
+.column-medium h1 {
     text-decoration: underline;
 }
-.column-finance:hover{
+.column-medium:hover {
     box-shadow: 0 0 10px var(--color);
     color: var(--background);
-    background-color:  var(--color);
+    background-color: var(--color);
     transition: order 0.3s;
 }
- .column-tech:hover{
-    box-shadow: 0 0 10px var(--color);
-    color: var(--background);
-    background-color:  var(--color);
-    transition: order 0.3s;
-} 
-.column-medium:hover{
-    box-shadow: 0 0 10px var(--color);
-    color: var(--background);
-    background-color:  var(--color);
-    transition: order 0.3s;
-}
-
-
-
-.column-finance, .column-tech, .column-medium button{
+.column-medium button {
     text-decoration: underline;
-    font-family:fantasy;
+    font-family: fantasy;
 }
-
 .custom-hr {
     border: none;
     border-radius: 50%;
@@ -418,19 +353,25 @@ footer {
     background-color: #363E21;
     color: var(--color);
     text-align: center;
-    border-bottom: 5px solid var(--color) ;
+    border-bottom: 5px solid var(--color);
 
-   
+
 }
-.footer-container{
+
+.footer-container {
     background-color: #363E21;
     color: var(--color);
-   
+
 }
-.description, .descriptiontwo ,.descriptionthree, .descriptionfour,.descriptionfive  {
+
+.description,
+.descriptiontwo,
+.descriptionthree,
+.descriptionfour,
+.descriptionfive {
     display: none;
     font-size: 0.5em;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* Style the button to indicate toggling */
@@ -443,85 +384,99 @@ footer {
 
 @media (max-width: 768px) {
     .product>h1 {
-      font-size: 3em; /* Decrease font size for smaller screens */
-      padding-left: 1%;
+        font-size: 3em;
+        /* Decrease font size for smaller screens */
+        padding-left: 1%;
     }
+
     .product h1:last-child {
         padding-left: 10%;
-        
+
     }
+
     .container-intro {
         min-height: max-content;
         height: 60vh;
-      }
-      .column-mission {
-        font-size: 1em;
-       
     }
 
-.container-mission {
-    padding: 5px;
-
-}
-.container-contact{
-    padding: 15px;
-    margin : 0px;
-    flex-direction: row;
-    flex-wrap: wrap;
-   
-}
-.column-image{
-padding: 0px;
-margin : 0px;
-width:100%;
-flex: 1;
-order: 1;
-margin-bottom: 20px;
-}
-.column-contact{
-    padding: 0px;
-    margin : 0px; 
-    width:100%;
-    margin-bottom: 20px;
-    order: 2;
-    flex: 1;
-}
-.column-contact h1{
-    text-align: center;
-    display: none;
-}
-.contact-option{
-    padding: 0 10px;
-}
-.jobSection{
-    width:100%;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-.column-left {
-    padding: 20px;
-    width: 100%;
-    
-
-}
-.service-description{
-font-size: 1em;
-text-align: center;
-padding-top: 15%;
-}
-  }
-  
-  @media (max-width: 480px) {
-    .product>h1{
-      font-size: 2em; /* Further decrease font size for even smaller screens */
-    }
-    .product h1:last-child {
-        padding-left: 10%;
-        
-    }
     .column-mission {
         font-size: 1em;
-    
-    }
-  }
 
+    }
+
+    .container-mission {
+        padding: 5px;
+
+    }
+
+    .container-contact {
+        padding: 15px;
+        margin: 0px;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .column-image {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        flex: 1;
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .column-contact {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        margin-bottom: 20px;
+        order: 2;
+        flex: 1;
+    }
+
+    .column-contact h1 {
+        text-align: center;
+        display: none;
+    }
+
+    .contact-option {
+        padding: 0 10px;
+    }
+
+    .jobSection {
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .column-left {
+        padding: 20px;
+        width: 100%;
+
+
+    }
+
+    .service-description {
+        font-size: 1em;
+        text-align: center;
+        padding-top: 15%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product>h1 {
+        font-size: 2em;
+        /* Further decrease font size for even smaller screens */
+    }
+
+    .product h1:last-child {
+        padding-left: 10%;
+
+    }
+
+    .column-mission {
+        font-size: 1em;
+
+    }
+}
