@@ -42,6 +42,7 @@ nav a {
     text-align: right;
     box-shadow: 0 0 10px var(--color);
     width: 100vw;
+    z-index: 100;
 }
 .muthoni {
     position: absolute;
